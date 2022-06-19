@@ -6,7 +6,7 @@ for(let i = 0; i<257; i++){
 }
 
 function changeColour(e) {
-    e.target.style.borderColor = "red";
+    e.target.classList.add("red-square");
 }
 
 const containerDivs = document.querySelectorAll(".container div");

@@ -2,6 +2,20 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button.selection {
+    width:300px;
+    height:40px;
+    margin:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
 .container {
     display:flex;
     flex-wrap: wrap;
@@ -20,4 +34,8 @@
     width:100%;
     border:0;
     height: 0;
+}
+
+.container div.red-square {
+    border-color: red;
 }
