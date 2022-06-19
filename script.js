@@ -1,6 +1,8 @@
 const container = document.querySelector(".container");
+let currentSize = 0;
 
 function createNewGrid(size){
+    currentSize = size;
     size = Number(size) + 1;
 
     deleteOldGrid();
@@ -47,3 +49,9 @@ function askForGridSize(e){
     if(size>80) return;
     createNewGrid(size);
 }
+
+window.addEventListener("keypress", (e) => {
+    if(e.key == "r"){
+        createNewGrid(currentSize);
+    }
+});
