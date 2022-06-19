@@ -13,6 +13,7 @@
     border: 1px solid black;
     height: 40px;
     width: 40px;
+
 }
 
 .container div:nth-child(16n+1) {
